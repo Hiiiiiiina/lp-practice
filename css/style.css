@@ -142,10 +142,12 @@ header {
     height: 300px;
     object-fit: contain;
     opacity: 0.7;
+    transition: 0.3s;   /*ホバーアニメーション追加*/
 }
 
 .skills-icon:hover {
     opacity: 1.0;
+    transform: scale(1.1);   /*ホバーアニメーション追加*/
 }
 
 .plan {
@@ -230,11 +232,15 @@ th:first-child:first-child {
     margin: 25px 10px;
     color: #8c8c8c;
     overflow: hidden; 
-    transition: background-color 0.5s;
+    transition: background-color 0.5s;   /*ホバーアニメーション追加*/
+    background-color: #e3f2fd;   /*ホバーアニメーション追加*/
+    transition: 0.3s;   /*ホバーアニメーション追加*/
 }
 
 .sns-icon:hover {
-    background-color:#fff
+    transform: scale(1.1);   /*ホバーアニメーション追加*/
+    background-color: #6ba7eb;   /*ホバーアニメーション追加*/
+    color: #fff;   /*ホバーアニメーション追加*/
     
 }
 
@@ -619,19 +625,4 @@ footer {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
-}
-
-/*-----------ホバーアニメーション-----------*/
-.sns-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e3f2fd;
-  transition: 0.3s;
-}
-
-.sns-icon:hover {
-  transform: scale(1.1);
-  background-color: #6ba7eb;
-  color: #fff;
 }
